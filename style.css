@@ -71,7 +71,7 @@ nav h1
     position: absolute;
     opacity: 0.8;
     z-index: 2;
-    top: 30%;
+    top: 45%;
     left: 0;
     right: 0;
     padding: 50px;
@@ -291,7 +291,7 @@ footer p
     }
     .Start p
     {
-        top: 150%;
+        top: 140%;
     }
 
 }
