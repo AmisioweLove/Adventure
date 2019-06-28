@@ -1,0 +1,297 @@
+body, html
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+h1,h2,h3,h4,h5,h6,text,ul,a
+{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+nav
+{
+    background-color: white;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+nav h1
+{
+    font-size: 60px;
+    margin-top: 12%;
+}
+.Navbar { display: none; }
+.Image
+{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.Text
+{
+    position: absolute;
+    z-index: 2;
+    opacity: 0.8;
+    top: 20%;
+    left:0;
+    right:0;
+    margin:auto;
+    font-size: 100px;
+    text-align: center;
+    animation: Show ease-in 2s;
+}
+.Text-1
+{
+    color: white;
+}
+.Start
+{
+    background-image: url("https://images.pexels.com/photos/2557526/pexels-photo-2557526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 1500px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    margin-bottom: 100px;
+}
+.Start p
+{
+    background-color: white;
+    color: black;
+    text-align: justify;
+    margin: auto;
+    position: absolute;
+    opacity: 0.8;
+    z-index: 2;
+    top: 40%;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    font-size: 30px;
+    animation: Show ease-in 2s;
+}
+
+@keyframes Show
+{
+    0% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+
+.Options
+{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: -25%;
+    z-index: 2;
+    padding: 5% 0 5% 0;
+}
+
+.Slider
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    border-radius: 25px;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.Slider h3
+{
+    text-align: center;
+    color: white;
+}
+.Slider p
+{
+    color: white;
+}
+.Slider-arrow
+{
+    position: absolute;
+    top: 45%;
+    font-size: 30px;
+    padding: 10px;
+}
+.Slider-arrow:hover
+{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+.Left
+{
+    left: 15%;
+}
+.Right
+{
+    right: 15%;
+}
+.Button
+{
+    background-image: linear-gradient(to bottom, #4a4a4a, #000000);
+    border-radius: 25px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.Button:hover
+{
+    background-image: linear-gradient(to bottom, #8c8c8c, #616161);
+    text-decoration: none;
+}
+.Try
+{
+    position: relative;
+    background-image: url("https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.Text-2
+{
+    color: black;
+    margin-top: 15%;
+}
+.Review
+{
+    position: absolute;
+    background-color: white;
+    top: 70%;
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+    width: 100%;
+    padding: 5% 0 5% 0;
+    z-index: 2;
+}
+.Review h3
+{
+    text-align: center;
+    margin: 10px;
+}
+.Review ul
+{
+    list-style: none;
+}
+.Storm
+{
+    background-image: url("https://cdn.pixabay.com/photo/2019/06/22/06/31/sky-4290922_1280.jpg");
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.Text-3
+{
+    top: 45%;
+}
+.Storm p
+{
+    background-color: black;
+    color: white;
+    text-align: justify;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    top: 80%;
+    left: 0;
+    right: 0;
+    padding: 50px;
+    font-size: 20px;
+    animation: Show ease-in 2s;
+}
+.Go
+{
+    height: 800px;
+   /*
+    background-image: url("https://cdn.pixabay.com/photo/2019/06/21/19/27/switzerland-4290226_1280.jpg");
+    */
+    background-image: url("https://cdn.pixabay.com/photo/2019/06/17/23/34/bridge-4281136_1280.jpg");
+    background-size: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: relative;
+}
+.Text-4
+{
+    top: 30%;
+    color: white;
+}
+footer
+{
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    background-color: white;
+}
+
+footer p
+{
+    margin: 1em;
+    text-align: center;
+}
+
+@media (min-width: 1024px)
+{
+    nav
+    {
+        height: 130px;
+    }
+    nav h1
+    {
+        font-size: 30px;
+    }
+    .Navbar { display: flex; }
+    .Navbar ul
+    {
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .Navbar ul li
+    {
+        margin:  1.5em 3em 1em 3em;
+    }
+    .Text
+    {
+        top: 40%;
+    }
+    .Text-2
+    {
+        margin-top: 0;
+    }
+    .Image-1
+    {
+        margin-top: 130px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        background-attachment: fixed;
+    }
+    .Start p
+    {
+        top: 150%;
+    }
+
+}
