@@ -14,75 +14,121 @@
             </div>
 
             <div class="Navbar">
-                <ul>
-                    <li>MenuOption1</li>
-                    <li>MenuOption2</li>
-                    <li>MenuOption3</li>
-                    <li>MenuOption4</li>
-                </ul>
+                 <a href="#trySection" class="Menu-option">Try</a>
+                 <a href="#optionsSection" class="Menu-option">Options</a>
+                 <a href="#reviewSection" class="Menu-option">Experience</a>
             </div>
         </nav>
     </header>
 
     <div class="Container">
-        <div class="Start">
-            <h2 class="Text Text-1">Never be<br>afraid to try</h2>
-        </div>
-        <p class="Introduction">
-            Not everybody likes adventures and nobody has to. But you always should fight for your dreams. Do your best to achive your goals. And keep trying.
-            Always remember about the first step to everything: try.
-        </p>
-        <div class="Options">
 
-            <h2> Know your options</h2>
-            <div class="Slider">
-                <div class="Slider-header">
-                    <h3>Nazwa programu</h3>
-                </div>
-                <span class="Slider-arrow Left"><</span>
-                <div class="Slider-p">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis condimentum elit, eu aliquam enim iaculis vitae. Nulla ligula turpis, euismod sed massa sed, viverra posuere nunc. Nullam vel ipsum scelerisque, euismod arcu a, ultrices massa. In hac habitasse platea dictumst. Fusce lobortis purus sed nisi fermentum fringilla ut a augue. Quisque rhoncus risus metus, ut mollis purus convallis sit amet. Nullam condimentum tristique ipsum ut rutrum. In condimentum vestibulum dapibus. Phasellus aliquet, libero sit amet dignissim accumsan, est quam fermentum metus, vel rhoncus nibh purus vitae erat. Maecenas ligula quam, laoreet sed tristique a, gravida id enim. </p>
-                </div>
-                <div class="Slider-button">
-                    <form action="https://aiesec.pl/" target="_blank">
-                        <input class="Button" type="submit" value="Check it out"/>
+        <div class="Start Image-section">
+            <h2 class="Text-on-image">Never be<br>afraid to try</h2>
+        </div>
+
+        <div class="Text-section" id="trySection">
+            <h2>Keep trying</h2>
+            <p>
+                Not everybody likes adventures and nobody has to. But you always should fight for your dreams. Do your best to achive your goals. And keep trying.
+                Always remember about the first step to everything: try.
+            </p>
+        </div>
+
+
+        <div class="Try Image-section">
+            <h2 class="Text-on-image">Dive into new experience</h2>
+        </div>
+
+
+        <div class="Text-section" id="optionsSection">
+            <h2>Know your options</h2>
+            <div class="OptionSlider">
+                <div class="MySlides fade">
+                    <h3 class="Title">AIESEC</h3>
+                    <p>
+                        Jak się okazuje,  nie tylko psy są fanami aportowania.
+                        Dla kotów jest to jedna z najlepszych zabaw ze względu
+                        na wzmożoną aktywnośc fizyczną, ale i pobudzanie nautralnych
+                        instynktów łowcy.
+                    </p>
+                    <form action="https://aiesec.org/" target="_blank">
+                        <input class="Button" type="submit" value="Check it out">
                     </form>
                 </div>
-                <span class="Slider-arrow Right">></span>
+                <div class="MySlides fade">
+                    <div class="Title"><h3>ERASMUS</h3></div>
+                    <p>
+                        Chociaż nie ma na to naukowych dowodów, z obserwacji wynika,
+                        że Gemma jest leworęczna. Broniąc się lub bawiąc zwykle używa
+                        lewej łapki chyba, że pozycja jest wyjątkowo niewygodna.
+                    </p>
+                    <form action="https://www.erasmusprogramme.com/" target="_blank">
+                        <input class="Button" value="Check it out" type="submit">
+                    </form>
+                </div>
+                <div class="MySlides fade">
+                    <div class="Title"><h3>WorkAway</h3></div>
+                    <p>
+                        Chociaż dyskusje o tym, czy zwierząta naprawde są w stanie oglądać
+                        telewizję nadal trwają, nasza rodzina może bez problemu stwierdzić, ze Gemma bardzo
+                        ją lubi. Niejednokrotnie zatrzymuje się przed ekranem i wptaruje w lecący
+                        aktualnie program.
+                    </p>
+                    <form action="https://www.workaway.info/" target="_blank">
+                        <input class="Button" type="submit" value="Check it out">
+                    </form>
+                </div>
+                <div class="MySlides fade">
+                    <div class="Title"><h3>Couch Surfing</h3></div>
+                    <p>
+                        Jedną z ulubionych zabaw Gemmy jest chowanie się pod jakiś materiał;
+                        koc, prześcieradło, rzadziej kołdrę. Wdrapuje się na przykład pod narzutę,
+                        czekając aż ktoś ją zaczepi, wtedy może zacząć atakować niewidzialnego przeciwnika.
+                        Czasami jednak lubi po prostu być opatulona i, kiedy zaczepimy ją pod narzutą.
+                        to głośno mruczy i czeka na głaskanie.
+                    </p>
+                    <form action="https://www.couchsurfing.com/" target="_blank">
+                        <input class="Button" type="submit" value="Check it out">
+                    </form>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
-        <div class="Try">
-            <h2 class="Text Text-2">Dive into new experience</h2>
-        </div>
-        <div class="Review">
-            <h3>Lorem Ipsum</h3>
-            <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Aliquam ac posuere mi, eu feugiat mi.</li>
-                <li>Nam sollicitudin leo justo, id facilisis justo elementum sed. </li>
-                <li>Duis facilisis mi at metus gravida sagittis.</li>
-                <li>Vivamus cursus dapibus luctus</li>
-                <li>Morbi vitae ex vitae mauris eleifend interdum</li>
-                <li>Vestibulum euismod tortor id quam scelerisque ullamcorper.</li>
-                <li>Donec a neque dolor.</li>
-                <li>Phasellus est nisi, accumsan vel elementum vel, aliquet sit amet nunc.</li>
-            </ul>
-        </div>
-        <div class="Storm">
-            <h2 class="Text Text-3">Nothing's ever perfect</h2>
 
+
+        <div class="Storm Image-section">
+            <h2 class="Text-on-image">Nothing's ever perfect</h2>
         </div>
-        <p class="Summary">
-            Maecenas pharetra sollicitudin neque. Vivamus sodales semper eros id pulvinar. Curabitur eleifend eros ut purus euismod tempor. Nulla varius nisi at fermentum vestibulum. Sed nec metus volutpat, elementum libero sed, tincidunt nisi. Integer pharetra eros erat, eget vehicula justo lacinia ac. Ut eu turpis at ex lobortis tristique. Etiam euismod ullamcorper diam, in tempus arcu. Duis vel augue eu ex tincidunt gravida at vel ex.
-        </p>
-        <div class="Go">
-            <h2 class="Text Text-4">Go<br>Explore<br>Live<br></h2>
+
+
+        <div class="Text-section" id="reviewSection">
+            <h2>Review - Lorem Ipsum</h2>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
         </div>
+
+
+        <div class="Go Image-section">
+            <h2 class="Text-on-image">Go<br>Explore<br>Live<br></h2>
+        </div>
+
     </div>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis condimentum elit, eu aliquam enim iaculis vitae. Nulla ligula turpis, euismod sed massa sed, viverra posuere nunc. Nullam vel ipsum scelerisque, euismod arcu a, ultrices massa. In hac habitasse platea dictumst.</p>
+        <div class="Text-section">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras mollis condimentum elit, eu aliquam enim iaculis vitae. Nulla ligula turpis, euismod sed massa sed, viverra posuere nunc. Nullam vel ipsum scelerisque, euismod arcu a, ultrices massa. In hac habitasse platea dictumst.</p>
+        </div>
     </footer>
-<script src="APIscripts.js"></script>
+<script src="APIscripts.js" type="application/javascript"></script>
+<script src="FloatingText.js" type="application/javascript"></script>
 </body>
 </html>
