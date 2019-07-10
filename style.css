@@ -1,11 +1,13 @@
+/* General styles */
 body, html
 {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: black;
+    scroll-behavior: smooth;
 }
-h1,h2,h3,h4,h5,h6,text,ul,a
+h1,h2,h3,h4,h5,h6,text,ul,a,p
 {
     margin-block-start: 0;
     margin-block-end: 0;
@@ -13,10 +15,36 @@ h1,h2,h3,h4,h5,h6,text,ul,a
     margin-inline-end: 0;
     padding-inline-start: 0;
 }
+h1
+{
+    font-size: 60px;
+    margin: 40px;
+}
+h2
+{
+    font-size: 50px;
+    margin: 30px;
+    text-align: center;
+}
+h3
+{
+    font-size: 40px;
+    margin: 20px;
+    text-align: center;
+}
+p
+{
+    font-size: 30px;
+    text-align: justify;
+    margin: 50px 100px 50px 100px;
+}
+
+/* navigation */
 nav
 {
-    background-color: white;
-    height: 170px;
+    background-color: black;
+    color: white;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,211 +52,168 @@ nav
     width: 100%;
     z-index: 10;
 }
-nav h1
-{
-    font-size: 60px;
-    margin-top: 12%;
-}
+
 .Navbar { display: none; }
-.Text
+
+/* First image section */
+.Text-on-image
 {
     position: absolute;
     z-index: 2;
-    opacity: 0.8;
-    top: 20%;
+    color: rgba(255,255,255,0.8);
+    top: 40%;
     left:0;
     right:0;
     margin:auto;
     font-size: 100px;
-    text-align: center;
+    -webkit-animation: Show ease-in 2s;;
+    -moz-animation: Show ease-in 2s;;
     animation: Show ease-in 2s;
 }
-.Text-1
-{
-    color: white;
-}
-.Start
-{
-    background-image: url("https://images.pexels.com/photos/2557526/pexels-photo-2557526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    height: 1500px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-}
-.Introduction
-{
-    background-color: white;
-    color: black;
-    text-align: justify;
-    margin: auto;
-    position: absolute;
-    opacity: 0.8;
-    z-index: 2;
-    top: 45%;
-    left: 0;
-    right: 0;
-    padding: 50px;
-    font-size: 30px;
-    animation: Show ease-in 2s;
-}
-
 @keyframes Show
 {
     0% {opacity: 0;}
-    100% {opacity: 0.8;}
+    100% {opacity: 1;}
 }
-
-.Options
+@-webkit-keyframes Show
 {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.Image-section
+{
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
+}
+.Start {background-image: url("https://images.pexels.com/photos/2557526/pexels-photo-2557526.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+
+/* Text sections */
+.Text-section
+{
+    position: relative;
     background-color: black;
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding: 5% 0 5% 0;
+    text-align: center;
+    width: 100%;
+    padding: 100px 0 100px 0;
+
+    border-top: 30vh solid transparent;
+    margin-top: -30vh;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
 }
 
-.Slider
+/* Second image section */
+.Try {background-image: url("https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}
+
+/* Slider */
+.MySlides {display: none;}
+.MySlides:first-child
 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: justify;
-    border-radius: 25px;
+}
+.OptionSlider
+{
+    display: flex;
+    margin: auto;
+    bottom: auto;
     width: 75%;
-    padding: 20px;
-    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
 }
-.Slider h3
-{
-    text-align: center;
-    color: white;
-}
-.Slider p
-{
-    color: white;
-    font-size: 20px;
-}
-.Slider-arrow
-{
-    position: absolute;
-    top: 45%;
-    font-size: 30px;
-    padding: 10px;
-}
-.Slider-arrow:hover
-{
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-    opacity: 0.8;
-}
-.Left
-{
-    left: 5%;
-}
-.Right
-{
-    right: 5%;
-}
+.OptionSlider p {margin: 20px}
 .Button
 {
-    background-image: linear-gradient(to bottom, #4a4a4a, #000000);
-    border-radius: 25px;
-    font-family: Arial;
+    background: #828282;
+    background-image: -webkit-linear-gradient(top, #828282, #4f4f4f);
+    background-image: -moz-linear-gradient(top, #828282, #4f4f4f);
+    background-image: -ms-linear-gradient(top, #828282, #4f4f4f);
+    background-image: -o-linear-gradient(top, #828282, #4f4f4f);
+    background-image: linear-gradient(to bottom, #828282, #4f4f4f);
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    font-family: Arial sans-serif;
     color: #ffffff;
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
+    margin: 20px auto 20px auto;
 }
-
 .Button:hover
 {
-    background-image: linear-gradient(to bottom, #8c8c8c, #616161);
+    background: #616161;
+    background-image: -webkit-linear-gradient(top, #616161, #303030);
+    background-image: -moz-linear-gradient(top, #616161, #303030);
+    background-image: -ms-linear-gradient(top, #616161, #303030);
+    background-image: -o-linear-gradient(top, #616161, #303030);
+    background-image: linear-gradient(to bottom, #616161, #303030);
     text-decoration: none;
 }
-.Try
+.prev, .next
 {
-    position: relative;
-    background-image: url("https://images.pexels.com/photos/2170473/pexels-photo-2170473.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    height: 800px;
-    background-size: cover;
-    background-attachment: fixed;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -22px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transition: 0.6s ease;
+    user-select: none;
+    width: auto;
+}
+.next {right: -80px;}
+.prev {left: -80px;}
+.prev:hover, .next:hover
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+.dot
+{
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 15px;
+    margin: 5px 2px 20px;
+    transition: background-color 0.6s ease;
+    width: 15px;
+}
+.active, .dot:hover {background-color: gray;}
+.fade
+{
+    -webkit-animation: fade 2s;
+    -moz-animation: fade 2s;
+    animation: fade 2s;
+}
+@-webkit-keyframes fade
+{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade
+{
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
-.Text-2
-{
-    color: black;
-    margin-top: 15%;
-}
-.Review
-{
-    position: relative;
-    background-color: white;
-    text-align: center;
-    color: black;
-    width: 100%;
-}
-.Review h3
-{
-    padding-top: 5%;
-    text-align: center;
-}
-.Review ul
-{
-    list-style: none;
-    padding-bottom: 5%;
-}
-.Review li
-{
-    margin: 0 5% 0 5%;
-}
-.Storm
-{
-    background-image: url("https://cdn.pixabay.com/photo/2019/06/22/06/31/sky-4290922_1280.jpg");
-    height: 800px;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    position: relative;
-}
-.Text-3
-{
-    top: 45%;
-}
-.Summary
-{
-    background-color: black;
-    color: white;
-    text-align: justify;
-    margin: auto;
-    position: relative;
-    left: 0;
-    right: 0;
-    padding: 50px;
-    font-size: 20px;
-    animation: Show ease-in 2s;
-}
-.Go
-{
-    height: 800px;
-   /*
-    background-image: url("https://cdn.pixabay.com/photo/2019/06/21/19/27/switzerland-4290226_1280.jpg");
-    */
-    background-image: url("https://cdn.pixabay.com/photo/2019/06/17/23/34/bridge-4281136_1280.jpg");
-    background-size: auto;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
-}
-.Text-4
-{
-    top: 30%;
-    color: white;
-}
+/* Third image section */
+.Storm {background-image: url("https://cdn.pixabay.com/photo/2019/06/22/06/31/sky-4290922_1280.jpg");}
+
+/* Fourth image section */
+.Go {background-image: url("https://cdn.pixabay.com/photo/2019/06/17/23/34/bridge-4281136_1280.jpg");}
+
+/* Footer */
 footer
 {
     position: absolute;
@@ -237,53 +222,31 @@ footer
     background-color: white;
 }
 
-footer p
-{
-    margin: 1em;
-    text-align: center;
-}
 
 @media (min-width: 1024px)
 {
-    nav
+    h1 {margin-bottom: 0;}
+    .Navbar
     {
-        height: 130px;
-    }
-    nav h1
-    {
-        font-size: 30px;
-    }
-    .Navbar { display: flex; }
-    .Navbar ul
-    {
+        display: flex;
+        text-decoration: none;
+        color: white;
         padding: 0;
         list-style: none;
-        display: flex;
         flex-direction: row;
+        scroll-behavior: smooth;
     }
-    .Navbar ul li
+    .Menu-option
     {
-        margin:  1.5em 3em 1em 3em;
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+        padding: 0.5em 3em 0.5em 3em;
+        scroll-behavior: smooth;
     }
-    .Text
+    .Menu-option:hover
     {
-        top: 40%;
+        background-color: #303030;
+        cursor: pointer;
     }
-    .Text-2
-    {
-        margin-top: 0;
-    }
-    .Image-1
-    {
-        margin-top: 130px;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        background-attachment: fixed;
-    }
-    .Introduction
-    {
-        top: 140%;
-    }
-
 }
